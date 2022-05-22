@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/jquery.fullPage.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/material-design-iconic-font.min.css" rel="stylesheet">
+    <link href="css/waves.min.css" rel="stylesheet">
+    <link href="css/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+    <link href="css/admin.css" rel="stylesheet">
+        <style type="text/css">
+        table {
+            line-height: 30px;
+            font-size: 12px;
+        }
+
+        th {
+            text-align: center
+        }
+
+        .btn {
+            background-color: #29a176;
+            color: white;
+        }
+    </style>
+     <style>
+#ctl00_ContentPlaceHolder1_GridView1 table {
+	width:100%;
+	margin:15px 0
+}
+#ctl00_ContentPlaceHolder1_GridView1 th {
+	background-color:#2E8B57;
+	color:#FFFFFF
+}
+#ctl00_ContentPlaceHolder1_GridView1,#ctl00_ContentPlaceHolder1_GridView1 th,#ctl00_ContentPlaceHolder1_GridView1 td
+{
+	font-size:0.95em;
+	padding:4px;
+	border:1px solid #87bc9f;
+	border-collapse:collapse
+}
+#ctl00_ContentPlaceHolder1_GridView1 tr:nth-child(odd){
+	background-color:#b9d8c7;
+}
+#ctl00_ContentPlaceHolder1_GridView1 tr:nth-child(even){
+	background-color:#fdfdfd;
+}
+</style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="
+    overflow-y: auto;
+    overflow-x: hidden;
+">
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
